@@ -7,7 +7,7 @@
     <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-auth-compat.js"></script>
-    <title>Sign In</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="form" id="form">
@@ -15,7 +15,11 @@
         <input type="text" placeholder="enter your email" id="email" class="email"></input>
         <p class="passwordDisplay" id="passwordDisplay">Password</p>
         <input type="password" placeholder="enter your password" id="password" class="password"></input>
-        <button class="sign-up" id="sign-up" onclick="signIn()">Sign In</button>
+        <button class="sign-up" id="sign-up" onclick="signUp()">Sign Up</button>
+        <!-- sign in option -->
+        <p>Already have an account?</p>
+        <span><a href="sign-in.html">Sign In</a></span>
+
     </div>
     <!-- script -->
     <script src="script.js"></script>

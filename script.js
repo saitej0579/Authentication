@@ -20,7 +20,7 @@ const signUp = () =>{
     firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((result) => {
     // Signed in 
-    document.write("you are signed up")
+    window.location.href = "index.html";
     console.log(result);
     // ...
   })
@@ -31,6 +31,7 @@ const signUp = () =>{
   });
 }
 
+
 // this function is for the siging in if already a user only
 
 const signIn = () => {
@@ -40,7 +41,7 @@ const signIn = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
   .then((result) => {
     // Signed in
-    document.write("you are signed In")
+    window.location.href = "index.html";
     console.log(result);
     // ...
   })
